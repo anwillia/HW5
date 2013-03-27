@@ -1,0 +1,21 @@
+﻿/* Andrew's Style Sheet */
+#container { background:black; padding:10px; margin:0 auto; border:2px solid silver; width:auto; }
+#header { background:yellow; color:black; padding:5px; margin:0 auto; border:1 px solid silver; width:1000px; }
+#main { background:white; color:black; padding:5px; margin:0 auto; border:1 px solid silver; width:1000px; }
+#footer { background:yellow; color:black; padding:5px; margin:0 auto; border:1 px solid silver; width:1000px; }
+#menu { background:silver; color:Black; padding:5px; margin:0 auto; border:1 px solid black; width:1000px; }
+
+.level1
+{
+    color:black;
+    background-color:silver;
+    font-size:large;
+    font-weight:bold;
+}
+
+.level2
+{
+    color:white;
+    background-color:black;
+    font-size:medium;
+}

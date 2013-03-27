@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="."  description="">
+      
+      <siteMapNode url="~/Default.aspx" title="Home"  description="Home Page" tooltip="Home Page" />
+      
+      <siteMapNode url="`/ViewShow.aspx" title="View Shows"  description="View Shows Page" tooltip="View Shows Page" />
+      
+      
+      <siteMapNode url="~/Admin/Default.aspx" title="Admin"  description="Admin Page" tooltip="Admin Page">
+        
+        <siteMapNode url="`/Admin/AddShow.aspx" title="Add Show"  description="Add Show Page" tooltip ="Admin Page" />
+        
+        <siteMapNode url="`/Admin/EditShow.aspx" title="Edit Show"  description="Edit Show Page" tooltip="Edit Show Page" />
+        
+        <siteMapNode url="`/Admin/DeleteShow.aspx" title="Delete Show"  description="Delete Show Page" tooltip="Delete Show Page" />
+        
+      </siteMapNode>
+
+      
+      <siteMapNode url="~/Members/Default.aspx" title="Members"  description="Members Page" tooltip ="Members Page">
+        
+        <siteMapNode url="~/Members/EditShow.aspx" title="Edit Show"  description="Edit Show Page" tooltip ="Edit Show Page" />
+        
+        <siteMapNode url="~/Members/Request.aspx" title="Requests"  description="Requests Page" tooltip ="Requests Page" />
+        
+      </siteMapNode>
+        
+    </siteMapNode>
+</siteMap>
