@@ -1,9 +1,15 @@
 ﻿/* Andrew's Style Sheet */
 #container { background:black; padding:10px; margin:0 auto; border:2px solid silver; width:auto; }
 #header { background:yellow; color:black; padding:5px; margin:0 auto; border:1 px solid silver; width:1000px; }
-#main { background:white; color:black; padding:5px; margin:0 auto; border:1 px solid silver; width:1000px; }
+#main { background:white; color:black; padding:5px; margin:0 auto; width:1000px;
+    height: 700px;
+}
 #footer { background:yellow; color:black; padding:5px; margin:0 auto; border:1 px solid silver; width:1000px; }
 #menu { background:silver; color:Black; padding:5px; margin:0 auto; border:1 px solid black; width:1000px; }
+
+.hdr_img { float:right; margin:0; padding:0; border:0; }img { float:right; margin:0; padding:0; border:0; }
+
+.login_status { color:black; font-size:large; font-weight:bold; }
 
 .level1
 {

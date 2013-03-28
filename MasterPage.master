@@ -14,10 +14,11 @@
     <form id="form1" runat="server">
     <div id = "container">
         <div id="header">
-        
-            <h1> Header Text </h1>
-
-        </div>
+            
+            <asp:Image class="hdr_img" ID="Image1" runat="server" ImageUrl="~/image/televison.jpg" />
+            <h1> Andrew's Favorite TV Shows </h1>
+            <asp:LoginStatus class="login_status" ID="LoginStatus1" runat="server" />
+            </div>
 
         <div id="menu">
            
@@ -26,15 +27,20 @@
             <asp:MenuItemStyle CssClass="level1" />
             <asp:MenuItemStyle CssClass="level2" />
             </LevelMenuItemStyles>
+            
         </asp:Menu>
-
-            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" showstartingnode="false"/>
-
+        
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+        
         </div>
 
         <div id="main">
 
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                    ConnectionString="<%$ ConnectionStrings:cs_TVShows %>" 
+                    SelectCommand="SELECT * FROM [TVShows]"></asp:SqlDataSource>
         
             </asp:ContentPlaceHolder>
 
@@ -42,7 +48,7 @@
 
         <div id="footer">
         
-            Footer Text
+            Disclaimer: I am in no way promoting these shows or advocating them or the actions that occur in the shows.
 
         </div>
 

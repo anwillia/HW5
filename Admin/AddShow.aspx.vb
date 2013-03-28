@@ -1,5 +1,5 @@
 ﻿
-Partial Class Admin_addshow
+Partial Class Admin_EditShow
     Inherits System.Web.UI.Page
 
 End Class
