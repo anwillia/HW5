@@ -32,24 +32,28 @@
                 <asp:Parameter Name="tvShowID" Type="String" />
             </UpdateParameters>
         </asp:SqlDataSource>
+    </p>
+    <p>
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+    </p>
+    <p>
         <br />
         <asp:GridView ID="GridView1" runat="server" AllowSorting="True" 
             AutoGenerateColumns="False" DataKeyNames="tvShowID" 
             DataSourceID="SqlDataSource1" Width="996px">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                <asp:BoundField DataField="tvShowID" HeaderText="Show ID" ReadOnly="True" 
-                    SortExpression="tvShowID" />
                 <asp:BoundField DataField="ShowName" HeaderText="Show Name" 
                     SortExpression="ShowName" />
                 <asp:BoundField DataField="Network" HeaderText="Network" 
                     SortExpression="Network" />
-                <asp:BoundField DataField="CurrentlyAiring" HeaderText="Currently Airing" 
-                    SortExpression="CurrentlyAiring" />
                 <asp:BoundField DataField="NextEpisode" HeaderText="Next Episode" 
                     SortExpression="NextEpisode" />
                 <asp:BoundField DataField="AirTime" HeaderText="Air Time" 
                     SortExpression="AirTime" />
+                <asp:HyperLinkField DataNavigateUrlFields="tvShowID" 
+                    DataNavigateUrlFormatString="ShowDetails.aspx?tvShowID={0}" 
+                    Text="View Details" />
             </Columns>
         </asp:GridView>
     </p>

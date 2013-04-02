@@ -7,7 +7,13 @@
 #footer { background:yellow; color:black; padding:5px; margin:0 auto; border:1 px solid silver; width:1000px; }
 #menu { background:silver; color:Black; padding:5px; margin:0 auto; border:1 px solid black; width:1000px; }
 
-.hdr_img { float:right; margin:0; padding:0; border:0; }img { float:right; margin:0; padding:0; border:0; }
+.hdr_img { float:right; margin:0; padding:0; border:0; }
+.left_img { border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    float:left; margin:0; padding:0; text-align: left;
+}
+
 
 .login_status { color:black; font-size:large; font-weight:bold; }
 

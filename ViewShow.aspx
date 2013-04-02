@@ -16,10 +16,6 @@
     <Columns>
         <asp:BoundField DataField="ShowName" HeaderText="Show Name" 
             SortExpression="ShowName" />
-        <asp:BoundField DataField="Network" HeaderText="Network" 
-            SortExpression="Network" />
-        <asp:BoundField DataField="CurrentlyAiring" HeaderText="Currently Airing" 
-            SortExpression="CurrentlyAiring" />
         <asp:BoundField DataField="NextEpisode" HeaderText="Next Episode" 
             SortExpression="NextEpisode" />
         <asp:BoundField DataField="AirTime" HeaderText="Air Time" 
